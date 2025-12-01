@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="demo"></p>
+
+<script>
+    let n = Number(prompt("too"));
+    let isPrime = true;
+
+    if (n <= 1) {
+        isPrime = false;
+    } else {
+        for (let i = 2; i < n; i++) {
+            if (n % i === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+    }
+
+    if (isPrime) {
+        document.getElementById("demo").innerHTML = n + " anhnii too mun";
+        console.log(n + " anhnii too mun");
+    } else {
+        document.getElementById("demo").innerHTML = n + " anhnii too bish";
+        console.log(n + " anhnii too bish");
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        let a=8;
+        let b=8;
+        let c=4;
+        let d=5;
+        function baga(num1,num2,num3,num4) {
+        let bagaUtga = num1;
+        if (num2<baga){
+           let bagaUtga=num2;
+        }
+        if (num3<baga){
+            bagaUtga=num3;
+        }
+        if (num4<baga){
+           let bagaUtga=num4;
+        }
+        document.getElementById("demo").innerHTML = bagaUtga;
+        console.log("baga ni",bagaUtga);
+        }
+        baga(a,b,c,d);
+    </script>
+</body>
+</html>
